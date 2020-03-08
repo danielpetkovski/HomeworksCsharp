@@ -10,7 +10,7 @@ namespace SEDC.Homeworks02.Exercise6
 
             Console.WriteLine("Please enter a number from 1-3");
 
-            int input = Console.ReadLine()[0];
+            int input = Console.ReadKey().KeyChar;
             /*bool isInputValid = int.TryParse(Console.ReadLine(), out input);*/
 
             switch (input)
