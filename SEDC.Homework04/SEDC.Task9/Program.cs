@@ -22,8 +22,8 @@ namespace SEDC.Task8
         public static int GetAge(DateTime dateOfBirth)
         {
             DateTime today = DateTime.Today;
-          
-            var age = today.Year - dateOfBirth.Year;
+
+            int age = today.Year - dateOfBirth.Year;
             
             if (dateOfBirth.Date > today.AddYears(-age)) age--;
 
