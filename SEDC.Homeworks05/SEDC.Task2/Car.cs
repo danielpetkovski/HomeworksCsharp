@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SEDC.Task2
+﻿namespace SEDC.Task2
 {
-   public class Car
+    public class Car
     {
         public string Model { get; set; }
         public int Speed { get; set; }
-        public string Driver { get; set; }
+        public Driver Driver { get; set; }
 
-        /*public Driver DriverObj;*/
-        public int CalculateSpeed(Driver driver)
+        public int CalculateSpeed()
         {
-            int res = driver.Skill * Speed;
+            int res = Driver.Skill * Speed;
 
             return res;
         }
