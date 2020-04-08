@@ -75,7 +75,7 @@ namespace SEDC.Homework06.ATM
                             continue;
                         }
 
-                        Array.Resize(ref customers, customers.Length);
+                        Array.Resize(ref customers, customers.Length + 1);
                         Customer newCustomer = new Customer(newFirstName, newLastName, newCardNumber, newPin);
                         customers[customers.Length - 1] = newCustomer;
                         Console.WriteLine($"Welcome {newCustomer.FirstName} {newCustomer.LastName}. You have successfully joined our ATM!");
