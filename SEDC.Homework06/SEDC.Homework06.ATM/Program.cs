@@ -120,7 +120,7 @@ namespace SEDC.Homework06.ATM
                                         customer.CashDeposit(validUserInput2);
                                         break;
                                 }
-                                Console.WriteLine("Would you like to do another action?");
+                                Console.WriteLine("Would you like to do another action? y/n");
                                 string actionInput = Console.ReadLine();
                                 if (actionInput == "n")
                                 {
